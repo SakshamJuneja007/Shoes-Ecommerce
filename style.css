@@ -429,7 +429,7 @@ section nav ul li a:hover {
     width: 100%;
     /* Control overall width */
     margin-top: 40px;
-    
+
 }
 
 .about-small-img {
@@ -519,11 +519,590 @@ section nav ul li a:hover {
     color: white;
 }
 
+/* review*/
+
+.review {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.review h1 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.review h1 span {
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.review_box {
+    width: 95%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.profile_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.profile .profile_image:hover {
+    transform: scale(1.2);
+}
+
+.profile_image img {
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.review_card {
+    width: 500px;
+    background: #f3f1f1;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+.name strong {
+    font-size: 20px;
+}
+
+.like {
+    color: gold;
+    font-size: 12px;
+
+}
+
+.comment p {
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.service {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 10px 0;
+    /* Changed to 10px for consistency */
+}
+
+.service h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.service h1 span {
+    margin-left: 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.service_card {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.service_box i {
+    font-size: 60px;
+    color: #dd1ea0;
+    margin: 20px 0;
+}
+
+.service-box h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.service-box p {
+    text-align: center;
+    color: #919191;
+    margin-bottom: 60px;
+
+}
+
+.login_form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(image/loging_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form .left img {
+    width: 650px;
+}
+
+.login_form .right {
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.login_form .right h1 {
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login_form .right p {
+    margin-bottom: 5px;
+}
+
+.login_form .right .user {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .user i {
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .user .username {
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.login_form .right .passworg_tag {
+    margin: 15px 0 5px 0;
+}
+
+.login_form .right .password {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .password i {
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .password input {
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.login_form .right .forget {
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+
+.login_form .right button {
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
+.login_form .right .loging_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.login_form .right .loging_icon a {
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.login_form .right .loging_icon img {
+    width: 20px;
+    margin: 5px 5px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .footer_main {
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag {
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center {
+    text-align: center;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+
+footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i {
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover {
+    color: #c72092;
+}
+
+footer .footer_main .tag .social_link {
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands {
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i {
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092, #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after {
+    left: 0;
+}
+
+footer .footer_main .tag .search_bar {
+    width: 230px;
+    height: 30px;
+    background: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input {
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+
+footer .footer_main .tag .search_bar button {
+    padding: 7px 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    footer .footer_main {
+        flex-direction: column;
+        align-items: center;
+        /* Center items */
+    }
+
+    footer .footer_main .tag {
+        margin: 20px 0;
+        /* More space between tags */
+    }
+
+    footer .footer_main .tag h1 {
+        font-size: 20px;
+        /* Adjust font size */
+    }
+
+    footer .footer_main .tag .search_bar {
+        width: 80%;
+        /* Full width search bar */
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+    .review_card{
+        width: 90%;
+
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    footer .footer_main .tag h1 {
+        font-size: 18px;
+        /* Further reduce font size */
+    }
+
+    footer .footer_main .tag .search_bar {
+        width: 90%;
+        /* Even more responsive width */
+    }
+
+    footer .footer_main .tag a {
+        font-size: 14px;
+        /* Adjust link font size */
+    }
+}
+
+/* For larger desktops */
+@media (min-width: 1200px) {
+    footer .footer_main {
+        justify-content: space-around;
+        /* More space for larger screens */
+    }
+
+    footer .footer_main .tag h1 {
+        font-size: 28px;
+        /* Increase font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .login_form {
+        background-image: url('image/loging2_bg.png');
+        /* Ensure the image is applied */
+        background-size: cover;
+        /* Keep it covering */
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Prevent repeating */
+        height: auto;
+        /* Allow height to adjust */
+        padding: 20px;
+        /* Optional: add some padding */
+    }
+}
+
+/* Additional media query for smaller devices */
+@media (max-width: 480px) {
+    .login_form {
+        background-image: url('image/loging2_bg.png');
+        /* Ensure the image is applied */
+        background-size: cover;
+        /* Keep it covering */
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Prevent repeating */
+        height: auto;
+        /* Allow height to adjust */
+        padding: 10px;
+        /* Optional: add some padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .login_form {
+        flex-direction: column;
+        /* Stack left and right sections */
+        height: auto;
+        /* Allow height to adjust */
+        padding: 20px;
+        align-items: center;
+        /* Add padding */
+    }
+
+    .login_form .left img {
+        display: none;
+        width: 100%;
+        /* Make image responsive */
+        max-width: 400px;
+        /* Limit max width */
+    }
+
+    .login_form .right {
+        top: 0;
+        /* Reset top positioning */
+        left: 0;
+        /* Reset left positioning */
+        padding: 20px;
+        /* Reduce padding */
+        width: 100%;
+        /* Full width for mobile */
+    }
+
+    .login_form .right h1 {
+        font-size: 30px;
+        /* Reduce font size */
+        margin-bottom: 20px;
+        /* Reduce margin */
+    }
+
+    .login_form .right .user,
+    .login_form .right .password,
+    .login_form .right button {
+        width: 90%;
+        /* Full width for inputs and buttons */
+        margin: 10px 0;
+        /* Add margin between elements */
+    }
+
+    .login_form .right .user .username,
+    .login_form .right .password input {
+        width: 100%;
+        /* Full width for input content */
+    }
+
+    .login_form .right .forget {
+        left: auto;
+        /* Reset positioning */
+        margin: 10px 0;
+        /* Adjust margin */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .login_form .right h1 {
+        font-size: 24px;
+        /* Further reduce font size */
+    }
+
+    .login_form .right .user,
+    .login_form .right .password,
+    .login_form .right button {
+        width: 100%;
+        /* Full width for inputs and buttons */
+    }
+}
+
+@media (max-width: 768px) {
+    .review_box {
+        flex-direction: column;
+    }
+
+    .service_box {
+        flex-direction: row;
+
+    }
+
+
+}
+
 /* Small devices (max-width: 767px) */
 @media (max-width: 767px) {
     .logo {
         margin-left: 20px;
     }
+
     section {
         height: 80vh;
         /* Keep section height */
@@ -725,155 +1304,217 @@ section nav ul li a:hover {
     }
 }
 
-    /* Media Query for smaller screens */
-    @media (max-width: 768px) {
-        .about-main {
-            flex-direction: column;
-            /* Stack elements vertically */
-            align-items: left;
-            
-            /* Center align items */
-        }
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .about-main {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: left;
 
-        .about-small-img {
-            left: 10%;
-            margin-right:none;
-            /* Remove right margin for smaller screens */
-            margin-bottom: 20px;
-            /* Add space below small images */
-        }
-
-        .about-text {
-            margin-left: 0;
-            /* Remove left margin for smaller screens */
-            text-align: center;
-            /* Center align text for readability */
-        }
+        /* Center align items */
     }
 
-
-    /* Medium devices (tablets, 768px to 1024px) */
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .main-text h1 {
-            font-size: 70px;
-            /* Adjust for tablets */
-        }
-
-        .products .box {
-            grid-template-columns: repeat(3, 1fr);
-            /* Three columns */
-        }
-
-        .button {
-            padding: 10px 18px;
-            /* Adjust button padding */
-        }
-
-        .about h1 {
-            font-size: 40px;
-            /* Decrease header size */
-        }
-
-        .about-small-img img {
-            height: 80px;
-            /* Decrease small image size */
-            margin: 4px 0;
-            /* Adjust spacing */
-        }
-
-        .image-container {
-            height: auto;
-            /* Let height adjust automatically */
-            padding: 15px;
-            /* Adjust padding */
-        }
-
-        .about-text p {
-            font-size: 14px;
-            /* Adjust font size */
-            line-height: 18px;
-            /* Adjust line height */
-            padding: 10px;
-            /* Adjust padding */
-        }
+    .about-small-img {
+        left: 10%;
+        margin-right: none;
+        /* Remove right margin for smaller screens */
+        margin-bottom: 20px;
+        /* Add space below small images */
     }
 
-    /* Large devices (desktops, 1025px and up) */
-    @media (min-width: 1025px) {
-        .main-text h1 {
-            font-size: 90px;
-            /* Original size for large screens */
-        }
+    .about-text {
+        margin-left: 0;
+        /* Remove left margin for smaller screens */
+        text-align: center;
+        /* Center align text for readability */
+    }
+}
 
-        .main-img img {
-            width: 100%;
-            /* Full width for large screens */
-            height: auto;
-            /* Maintain aspect ratio */
-        }
 
-        .products .box {
-            grid-template-columns: repeat(4, 1fr);
-            /* Four columns for larger screens */
-        }
-
-        .products .box .card {
-            width: 290px;
-            /* Keep original size */
-        }
-
-        .social-icon {
-            font-size: 20px;
-            /* Larger icons */
-        }
-
-        .button {
-            padding: 10px 20px;
-            /* Keep original padding */
-        }
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-text h1 {
+        font-size: 70px;
+        /* Adjust for tablets */
     }
 
-
-
-
-
-    @keyframes slideRight {
-        from {
-            transform: translateX(0);
-            /* Relative to base font size */
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(100%);
-            opacity: 1;
-        }
+    .products .box {
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns */
     }
 
-    @keyframes slideTop {
-        from {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
+    .button {
+        padding: 10px 18px;
+        /* Adjust button padding */
     }
 
-    @keyframes slideDown {
-        from {
-            transform: translateY(-20px);
-            /* Start slightly above */
-            opacity: 0;
-            /* Start hidden */
-        }
-
-        to {
-            transform: translateY(0);
-            /* End at original position */
-            opacity: 1;
-            /* Fully visible */
-        }
+    .about h1 {
+        font-size: 40px;
+        /* Decrease header size */
     }
+
+    .about-small-img img {
+        height: 80px;
+        /* Decrease small image size */
+        margin: 4px 0;
+        /* Adjust spacing */
+    }
+
+    .image-container {
+        height: auto;
+        /* Let height adjust automatically */
+        padding: 15px;
+        /* Adjust padding */
+    }
+
+    .about-text p {
+        font-size: 14px;
+        /* Adjust font size */
+        line-height: 18px;
+        /* Adjust line height */
+        padding: 10px;
+        /* Adjust padding */
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .main-text h1 {
+        font-size: 90px;
+        /* Original size for large screens */
+    }
+
+    .main-img img {
+        width: 100%;
+        /* Full width for large screens */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .products .box {
+        grid-template-columns: repeat(4, 1fr);
+        /* Four columns for larger screens */
+    }
+
+    .products .box .card {
+        width: 290px;
+        /* Keep original size */
+    }
+
+    .social-icon {
+        font-size: 20px;
+        /* Larger icons */
+    }
+
+    .button {
+        padding: 10px 20px;
+        /* Keep original padding */
+    }
+}
+
+
+
+
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+        /* Relative to base font size */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        /* Start slightly above */
+        opacity: 0;
+        /* Start hidden */
+    }
+
+    to {
+        transform: translateY(0);
+        /* End at original position */
+        opacity: 1;
+        /* Fully visible */
+    }
+}
+
+.review {
+    width: 100%;
+    height: auto;
+    /* Change to auto to allow height adjustment */
+    padding-top: 80px;
+    margin-bottom: 50px;
+    /* Ensure there's space below for the service section */
+}
+
+.service {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 10px 0;
+    /* Keep padding consistent */
+}
+
+/* Existing styles for .review and .service ... */
+
+/* Media Queries */
+
+/* For tablets and phones */
+@media (max-width: 768px) {
+    .review {
+        margin-bottom: 40px;
+        /* Adjust bottom margin for spacing */
+    }
+
+    .service {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        padding: 40px 0 10px 0;
+        /* Reduce padding */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .review {
+        margin-bottom: 30px;
+        /* Adjust bottom margin for spacing */
+    }
+
+    .service {
+        width: 95%;
+        /* Full width for mobile */
+    }
+}
+
+/* For larger laptops and desktops */
+@media (min-width: 1200px) {
+    .review {
+        margin-bottom: 50px;
+        /* Ensure spacing below review */
+    }
+
+    .service {
+        width: 60%;
+        /* More compact layout for larger screens */
+    }
+}
