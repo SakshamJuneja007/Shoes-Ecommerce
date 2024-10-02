@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Background Section */
+.background-section {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease forwards; /* Fade-in animation */
+    animation-delay: 0.7s; /* Delay before the animation starts */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Navigation */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 35px;
+    color: #dd1ea0;
+    margin: 5px 0;
+    position: relative;
+    left: -4%;
+    opacity: 0; /* Start hidden */
+    animation: slideDown 0.5s ease forwards; /* Apply animation */
+    animation-delay: 0.5s; /* Delay before the animation starts */
+}
+
+.logo span {
+    color: #6c14d0;
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style: none;   
+}
+
+.nav-bar a {
+    transition: color 0.3s ease; /* Transition for color change */
+    animation: slideIn 0.5s ease forwards; /* Adjusted animation */
+    animation-delay: calc(0.5s * var(--i)); /* Slightly quicker delay */
+    opacity: 0; /* Start hidden */
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover {
+    color: #dd1ea0;
+}
+
+.icon {
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: #dd1ea0;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0; /* Start hidden */
+    animation: slideIn 1s ease forwards; /* Animation for main content */
+    animation-delay: 1s; /* Delay for main content */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px); /* Slide in from the left */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Main Text */
+.main-text h1 {
+    font-size: 90px;
+    line-height: 70px;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5px; 
+}
+
+.main-text h1 span {
+    font-size: 70px;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-text p {
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5px;
+}
+
+/* Main Image */
+.main-img img {
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+
+/* Social Icons */
+.social-icon {
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+}
+
+.social-icon i {
+    margin: 8px 0;
+    cursor: pointer;
+    opacity: 0; /* Start hidden */
+    transition: 0.3s ease, color 0.3s ease; /* Combined transition */
+    animation: slideIn 0.5s ease forwards; /* Fixed duration syntax */
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.social-icon i:hover {
+    color: #dd1ea0;
+}
+
+/* Button */
+.button {
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    opacity: 0; /* Start hidden */
+    transition: 0.3s ease, color 0.3s ease; /* Combined transition */
+    animation: slideRight 1s ease forwards; /* Fixed duration syntax */
+    animation-delay: 0.7s;
+}
+
+.button a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.button i {
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    transform: translateX(6px);
+}
+
+/* products */
+.products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+    margin-top: 45px;
+}
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Simplified grid definition */
+    grid-gap: 25px; /* Vertical and horizontal spacing */
+}
+
+.products .box .card img { /* Corrected selector */
+    width: 150px;
+    height: auto; /* Maintain aspect ratio */
+}
+.products .box .card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px #6c14d0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background:#f6f6f6 ;
+    text-align: center;
+}
+.products .box .card {
+    display: flex;
+    flex-flow: column;
+    position: relative; /* Keep relative for layout */
+    margin: 40px 0;
+    overflow: visible; /* Allow overflow to show image */
+    transition: 0.3s; /* For card smooth transition if needed */
+}
+
+.products .box .card .image {
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.products .box .card:hover .image {
+    transform: translateY(-80px); /* Move image upward on hover */
+    /* You can increase this value to make it more dramatic */
+}
+
+/* Optional: Add styles to the image for better aesthetics */
+.products .box .card .image img {
+    width: 100%; /* Make sure the image fills the container */
+    display: block; /* Removes bottom space */
+    transition: 0.3s ease; /* Smooth transition for the image itself */
+}
+
+.small-card {
+    display: flex;
+    flex-flow: column;
+    position: absolute; /* Keep relative for layout */
+    margin: 10px;
+    margin-left: -15px;
+    transform: translateX(-100%); /* Start hidden off-screen */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.products .box .card:hover .small-card {
+    transform: translateX(0); /* Slide in from the left */
+    cursor: pointer;
+    opacity: 1; /* Make it visible */
+}
+
+.small-card i {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+}
+
+.small-card i:hover {
+    color: #dd1ea0; /* Change color on hover */
+}
+.product-text p{
+    color: #919191;
+    line-height: 21px;
+    margin: 8px 0;
+}
+.product-texth3{
+    margin: 7px 0;
+}
+.product-star{
+    color: gold;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+.btn { 
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    color: white;
+    border-radius: 25px; /* Rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    display: inline-block; /* Ensures padding works correctly */
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #6c14d0, #dd1ea0); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about {
+    width: 100%; /* Change to 100% for responsive design */
+    height: 100vh;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.about h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.about h1 span {
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.about {
+    width: 100%; /* Full width for responsiveness */
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.about h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.about h1 span {
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-main {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about-img {
+    display: flex;
+    margin-top: 50px;
+    /* margin-right: 50px; Adds space to the right of the image section */
+   
+}
+
+.about-small-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 50px; /* Adds space to the right of the image section */
+    top: 15px;
+    align-items: flex-start;
+}
+
+.about-small-img img {
+    height: 92px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    display: block;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+    display:flex
+}
+
+.about-small-img img:hover {
+    opacity: 1;
+}
+
+.image-container {
+    border: 3px solid #6c14d0;
+    border-radius: 20px;
+    height: 430px;
+    padding: 30px;
+    box-shadow: 0 0 8px #6c14d0;
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    /* margin-right: 55%; */
+    
+}
+
+.about-text {
+    margin-top: 45px;
+    /* margin-right: 30px; Adds space to the right of the image section */
+
+}
+
+.about-text p {
+    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 600px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid #dd1ea0;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #dd1ea0;
+}
+#imgbox{
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (max-width: 767px) */
+@media (max-width: 767px) {
+    section {
+        height: 80vh; /* Keep section height */
+    }
+
+    .main-text {
+        text-align: center; /* Center text */
+    }
+
+    .main-text h1 {
+        font-size: 30px; /* Smaller heading */
+        line-height: 30px; /* Adjust line height */
+        margin-top: 80px; /* Top margin */
+    }
+
+    .main-text h1 span {
+        font-size: 30px; /* Smaller span text */
+    }
+
+    .about-small-img img {
+        height: 60px; /* Smaller image size */
+        margin-bottom: 30px; /* Space below small images */
+    }
+
+    .main-text p {
+        width: 90%; /* Responsive text width */
+        line-height: 25px; /* Line height */
+        text-align: center; /* Center text */
+        font-size: medium; /* Font size */
+        color: black; /* Text color */
+    }
+
+    .main-img {
+        display: none; /* Hide main image */
+    }
+
+    .products h1 {
+        font-size: 30px; /* Smaller product title */
+    }
+
+    .products .box {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    .products .box .card {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .social-icon {
+        font-size: 16px; /* Smaller icons */
+    }
+
+    .button {
+        margin-top: 90px; /* Space above button */
+    }
+
+    .about-main {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align to the left */
+        height: min-content; /* Adjust height */
+        margin-top: 20px; /* Space above */
+    }
+
+    .image-container {
+        width: 0px;
+        padding: 10px; /* Container padding */
+        display: flex; /* Use flexbox for alignment */
+        align-items: center; /* Center image vertically */
+        justify-content: flex-start; /* Align image to the left */
+        overflow: hidden; /* Hide overflow */
+        width: 100%; /* Full width */
+    }
+
+    .about-small-img {
+        display: flex; /* Use flexbox */
+        flex-direction: row; /* Align images in a row */
+        margin-bottom: 20px; /* Space below */
+    }
+
+    .about-small-img img {
+        height: 60px; /* Smaller image size */
+        margin: 0 5px; /* Space between images */
+    }
+
+    .about-img {
+        width: fit-content; /* Adjust width */
+        margin-right: 0; /* Remove right margin */
+        margin-top: 90px; /* Space above */
+    }
+
+    .about-text {
+        width: 90%; /* Use more screen width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .about-text p {
+        line-height: 20px; /* Adjust line height */
+    }
+}
+
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-text h1 {
+        font-size: 70px; /* Adjust for tablets */
+    }
+
+    .products .box {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+
+    .button {
+        padding: 10px 18px; /* Adjust button padding */
+    }
+
+    .about h1 {
+        font-size: 40px; /* Decrease header size */
+    }
+
+    .about-small-img img {
+        height: 80px; /* Decrease small image size */
+        margin: 4px 0; /* Adjust spacing */
+    }
+
+    .image-container {
+        height: auto; /* Let height adjust automatically */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .about-text p {
+        font-size: 14px; /* Adjust font size */
+        line-height: 18px; /* Adjust line height */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .main-text h1 {
+        font-size: 90px; /* Original size for large screens */
+    }
+
+    .main-img img {
+        width: 100%; /* Full width for large screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .products .box {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    }
+
+    .products .box .card {
+        width: 290px; /* Keep original size */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Larger icons */
+    }
+
+    .button {
+        padding: 10px 20px; /* Keep original padding */
+    }
+}
+
+
+
+
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0); /* Relative to base font size */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px); /* Start slightly above */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
