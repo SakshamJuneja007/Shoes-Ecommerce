@@ -20,17 +20,23 @@ section {
 
 /* Background Section */
 .background-section {
-    opacity: 0; /* Start hidden */
-    animation: fadeIn 1s ease forwards; /* Fade-in animation */
-    animation-delay: 0.7s; /* Delay before the animation starts */
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 1s ease forwards;
+    /* Fade-in animation */
+    animation-delay: 0.7s;
+    /* Delay before the animation starts */
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Start hidden */
+        opacity: 0;
+        /* Start hidden */
     }
+
     to {
-        opacity: 1; /* Fully visible */
+        opacity: 1;
+        /* Fully visible */
     }
 }
 
@@ -54,9 +60,12 @@ section {
     margin: 5px 0;
     position: relative;
     left: -4%;
-    opacity: 0; /* Start hidden */
-    animation: slideDown 0.5s ease forwards; /* Apply animation */
-    animation-delay: 0.5s; /* Delay before the animation starts */
+    opacity: 0;
+    /* Start hidden */
+    animation: slideDown 0.5s ease forwards;
+    /* Apply animation */
+    animation-delay: 0.5s;
+    /* Delay before the animation starts */
 }
 
 .logo span {
@@ -66,14 +75,18 @@ section {
 
 /* Navigation Bar */
 .nav-bar {
-    list-style: none;   
+    list-style: none;
 }
 
 .nav-bar a {
-    transition: color 0.3s ease; /* Transition for color change */
-    animation: slideIn 0.5s ease forwards; /* Adjusted animation */
-    animation-delay: calc(0.5s * var(--i)); /* Slightly quicker delay */
-    opacity: 0; /* Start hidden */
+    transition: color 0.3s ease;
+    /* Transition for color change */
+    animation: slideIn 0.5s ease forwards;
+    /* Adjusted animation */
+    animation-delay: calc(0.5s * var(--i));
+    /* Slightly quicker delay */
+    opacity: 0;
+    /* Start hidden */
 }
 
 section nav ul li {
@@ -104,19 +117,27 @@ section nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    opacity: 0; /* Start hidden */
-    animation: slideIn 1s ease forwards; /* Animation for main content */
-    animation-delay: 1s; /* Delay for main content */
+    opacity: 0;
+    /* Start hidden */
+    animation: slideIn 1s ease forwards;
+    /* Animation for main content */
+    animation-delay: 1s;
+    /* Delay for main content */
 }
 
 @keyframes slideIn {
     from {
-        transform: translateX(-20px); /* Slide in from the left */
-        opacity: 0; /* Start hidden */
+        transform: translateX(-20px);
+        /* Slide in from the left */
+        opacity: 0;
+        /* Start hidden */
     }
+
     to {
-        transform: translateX(0); /* End at original position */
-        opacity: 1; /* Fully visible */
+        transform: translateX(0);
+        /* End at original position */
+        opacity: 1;
+        /* Fully visible */
     }
 }
 
@@ -129,7 +150,7 @@ section nav ul li a:hover {
     -webkit-text-fill-color: transparent;
     position: relative;
     top: 45px;
-    left: 5px; 
+    left: 5px;
 }
 
 .main-text h1 span {
@@ -169,9 +190,12 @@ section nav ul li a:hover {
 .social-icon i {
     margin: 8px 0;
     cursor: pointer;
-    opacity: 0; /* Start hidden */
-    transition: 0.3s ease, color 0.3s ease; /* Combined transition */
-    animation: slideIn 0.5s ease forwards; /* Fixed duration syntax */
+    opacity: 0;
+    /* Start hidden */
+    transition: 0.3s ease, color 0.3s ease;
+    /* Combined transition */
+    animation: slideIn 0.5s ease forwards;
+    /* Fixed duration syntax */
     animation-delay: calc(0.5s * var(--i));
 }
 
@@ -186,9 +210,12 @@ section nav ul li a:hover {
     padding: 10px 20px;
     border-radius: 30px;
     background: linear-gradient(to right, #dd1ea0, #6c14d0);
-    opacity: 0; /* Start hidden */
-    transition: 0.3s ease, color 0.3s ease; /* Combined transition */
-    animation: slideRight 1s ease forwards; /* Fixed duration syntax */
+    opacity: 0;
+    /* Start hidden */
+    transition: 0.3s ease, color 0.3s ease;
+    /* Combined transition */
+    animation: slideRight 1s ease forwards;
+    /* Fixed duration syntax */
     animation-delay: 0.7s;
 }
 
@@ -208,13 +235,14 @@ section nav ul li a:hover {
 }
 
 /* products */
-.products{
+.products {
     width: 100%;
     height: 140vh;
     padding: 25px 0;
     margin-top: 45px;
 }
-.products h1{
+
+.products h1 {
     margin: 35px 0;
     font-size: 60px;
     display: flex;
@@ -226,67 +254,88 @@ section nav ul li a:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .box {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Simplified grid definition */
-    grid-gap: 25px; /* Vertical and horizontal spacing */
+    grid-template-columns: repeat(4, 1fr);
+    /* Simplified grid definition */
+    grid-gap: 25px;
+    /* Vertical and horizontal spacing */
 }
 
-.products .box .card img { /* Corrected selector */
+.products .box .card img {
+    /* Corrected selector */
     width: 150px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
 }
-.products .box .card{
+
+.products .box .card {
     width: 290px;
     height: 440px;
     box-shadow: 0 0 8px #6c14d0;
     border-radius: 5px;
     padding: 10px 20px;
-    background:#f6f6f6 ;
+    background: #f6f6f6;
     text-align: center;
 }
+
 .products .box .card {
     display: flex;
     flex-flow: column;
-    position: relative; /* Keep relative for layout */
+    position: relative;
+    /* Keep relative for layout */
     margin: 40px 0;
-    overflow: visible; /* Allow overflow to show image */
-    transition: 0.3s; /* For card smooth transition if needed */
+    overflow: visible;
+    /* Allow overflow to show image */
+    transition: 0.3s;
+    /* For card smooth transition if needed */
 }
 
 .products .box .card .image {
-    transition: transform 0.3s ease; /* Smooth transition for image */
+    transition: transform 0.3s ease;
+    /* Smooth transition for image */
 }
 
 .products .box .card:hover .image {
-    transform: translateY(-80px); /* Move image upward on hover */
+    transform: translateY(-80px);
+    /* Move image upward on hover */
     /* You can increase this value to make it more dramatic */
 }
 
 /* Optional: Add styles to the image for better aesthetics */
 .products .box .card .image img {
-    width: 100%; /* Make sure the image fills the container */
-    display: block; /* Removes bottom space */
-    transition: 0.3s ease; /* Smooth transition for the image itself */
+    width: 100%;
+    /* Make sure the image fills the container */
+    display: block;
+    /* Removes bottom space */
+    transition: 0.3s ease;
+    /* Smooth transition for the image itself */
 }
 
 .small-card {
     display: flex;
     flex-flow: column;
-    position: absolute; /* Keep relative for layout */
+    position: absolute;
+    /* Keep relative for layout */
     margin: 10px;
     margin-left: -15px;
-    transform: translateX(-100%); /* Start hidden off-screen */
-    opacity: 0; /* Initially hidden */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    transform: translateX(-100%);
+    /* Start hidden off-screen */
+    opacity: 0;
+    /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth transition */
 }
 
 .products .box .card:hover .small-card {
-    transform: translateX(0); /* Slide in from the left */
+    transform: translateX(0);
+    /* Slide in from the left */
     cursor: pointer;
-    opacity: 1; /* Make it visible */
+    opacity: 1;
+    /* Make it visible */
 }
 
 .small-card i {
@@ -300,53 +349,64 @@ section nav ul li a:hover {
 }
 
 .small-card i:hover {
-    color: #dd1ea0; /* Change color on hover */
+    color: #dd1ea0;
+    /* Change color on hover */
 }
-.product-text p{
+
+.product-text p {
     color: #919191;
     line-height: 21px;
     margin: 8px 0;
 }
-.product-texth3{
+
+.product-texth3 {
     margin: 7px 0;
 }
-.product-star{
+
+.product-star {
     color: gold;
     margin-bottom: 19px;
     cursor: pointer;
 }
-.btn { 
+
+.btn {
     text-decoration: none;
     padding: 10px 20px;
     background: linear-gradient(to right, #dd1ea0, #6c14d0);
     color: white;
-    border-radius: 25px; /* Rounded corners */
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    display: inline-block; /* Ensures padding works correctly */
+    border-radius: 25px;
+    /* Rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
+    display: inline-block;
+    /* Ensures padding works correctly */
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #6c14d0, #dd1ea0); /* Reverse gradient on hover */
-    transform: translateY(-3px); /* Lift effect on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background: linear-gradient(to right, #6c14d0, #dd1ea0);
+    /* Reverse gradient on hover */
+    transform: translateY(-3px);
+    /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
 }
 
 .about {
-    width: 100%; /* Change to 100% for responsive design */
-    height: 100vh;
+    width: 100%;
     padding: 35px 0;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    /* Align content to the right */
 }
 
 .about h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    /* Align header text to the right */
     background: black;
     -webkit-background-clip: text;
     background-clip: text;
@@ -355,345 +415,465 @@ section nav ul li a:hover {
 }
 
 .about h1 span {
-    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    background: linear-gradient(to right, #c72092, #6c14d0);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 15px;
 }
 
-.about {
-    width: 100%; /* Full width for responsiveness */
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-}
-
-.about h1 {
-    font-size: 60px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-}
-
-.about h1 span {
-    background: linear-gradient(to right, #dd1ea0, #6c14d0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .about-main {
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.about-img {
-    display: flex;
-    margin-top: 50px;
-    /* margin-right: 50px; Adds space to the right of the image section */
-   
+    align-items: flex-start;
+    /* Align items to the start */
+    width: 100%;
+    /* Control overall width */
+    margin-top: 40px;
+    
 }
 
 .about-small-img {
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-right: 50px; /* Adds space to the right of the image section */
-    top: 15px;
-    align-items: flex-start;
+    /* Stack small images vertically */
+    margin-left: 30px;
+    /* Space between small images and main image */
 }
 
 .about-small-img img {
     height: 92px;
+    /* Set height for small images */
     margin: 5px 0;
+    /* Space between images */
     cursor: pointer;
-    background: linear-gradient(to right, #dd1ea0, #6c14d0);
-    display: block;
     border-radius: 6px;
-    padding: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
     opacity: 0.8;
-    transition: 0.3s;
-    display:flex
+    transition: opacity 0.3s;
 }
 
 .about-small-img img:hover {
     opacity: 1;
+    /* Full opacity on hover */
+}
+
+.about-img {
+    flex: 1;
+    /* Allow the image section to grow */
+    display: flex;
+    justify-content: flex-start;
+    /* Align main image to the left */
+    gap: 30px;
+
 }
 
 .image-container {
     border: 3px solid #6c14d0;
     border-radius: 20px;
-    height: 430px;
-    padding: 30px;
+    padding: 10px;
     box-shadow: 0 0 8px #6c14d0;
-    display: flex;
-    align-items: center; /* Center image vertically */
-    justify-content: center; /* Center image horizontally */
-    /* margin-right: 55%; */
-    
+    width: 800%;
+}
+
+.image-container img {
+    height: 500px;
+    /* Set image height */
+    border-radius: 15px;
+    /* Add slight rounding to corners */
 }
 
 .about-text {
-    margin-top: 45px;
-    /* margin-right: 30px; Adds space to the right of the image section */
-
+    flex: 1;
+    /* Allow the text section to grow */
+    margin-left: 30px;
+    /* Add space between image and text */
+    text-align: justify;
+    /* Justify text for a cleaner look */
 }
 
 .about-text p {
-    background: linear-gradient(to right, #dd1ea0, #6c14d0);
+    background: linear-gradient(to left, #c72092, #6c14d0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 22px;
-    width: 600px;
-    text-align: justify;
-    padding: 25px 30px;
-    border: 2px solid #dd1ea0;
+    line-height: 28px;
+    padding: 25px;
+    border: 2px solid #c72092;
     border-radius: 20px;
-    box-shadow: 0 0 8px #dd1ea0;
-}
-#imgbox{
-    height: 400px;
+    box-shadow: 0 0 8px #c72092;
 }
 
+.about-btn {
+    color: black;
+    background: none;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #c72092;
+    text-decoration: none;
+    box-shadow: 0 0 8px #c72092;
+    transition: 0.5s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-btn:hover {
+    background: #c72092;
+    /* Change background on hover */
+    color: white;
+}
 
 /* Small devices (max-width: 767px) */
 @media (max-width: 767px) {
+    .logo {
+        margin-left: 20px;
+    }
     section {
-        height: 80vh; /* Keep section height */
+        height: 80vh;
+        /* Keep section height */
     }
 
     .main-text {
-        text-align: center; /* Center text */
+        text-align: center;
+        /* Center text */
     }
 
     .main-text h1 {
-        font-size: 30px; /* Smaller heading */
-        line-height: 30px; /* Adjust line height */
-        margin-top: 80px; /* Top margin */
+        font-size: 30px;
+        /* Smaller heading */
+        line-height: 30px;
+        /* Adjust line height */
+        margin-top: 80px;
+        /* Top margin */
     }
 
     .main-text h1 span {
-        font-size: 30px; /* Smaller span text */
+        font-size: 30px;
+        /* Smaller span text */
     }
 
-    .about-small-img img {
-        height: 60px; /* Smaller image size */
-        margin-bottom: 30px; /* Space below small images */
-    }
 
     .main-text p {
-        width: 90%; /* Responsive text width */
-        line-height: 25px; /* Line height */
-        text-align: center; /* Center text */
-        font-size: medium; /* Font size */
-        color: black; /* Text color */
+        width: 90%;
+        /* Responsive text width */
+        line-height: 25px;
+        /* Line height */
+        text-align: center;
+        /* Center text */
+        font-size: medium;
+        /* Font size */
+        color: black;
+        /* Text color */
     }
 
     .main-img {
-        display: none; /* Hide main image */
+        display: none;
+        /* Hide main image */
     }
 
     .products h1 {
-        font-size: 30px; /* Smaller product title */
+        font-size: 30px;
+        /* Smaller product title */
     }
 
     .products .box {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on small screens */
     }
 
     .products .box .card {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
+        /* Full width on small screens */
     }
 
     .social-icon {
-        font-size: 16px; /* Smaller icons */
+        font-size: 16px;
+        /* Smaller icons */
     }
 
     .button {
-        margin-top: 90px; /* Space above button */
-    }
-
-    .about-main {
-        display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align to the left */
-        height: min-content; /* Adjust height */
-        margin-top: 20px; /* Space above */
-    }
-
-    .image-container {
-        width: 0px;
-        padding: 10px; /* Container padding */
-        display: flex; /* Use flexbox for alignment */
-        align-items: center; /* Center image vertically */
-        justify-content: flex-start; /* Align image to the left */
-        overflow: hidden; /* Hide overflow */
-        width: 100%; /* Full width */
-    }
-
-    .about-small-img {
-        display: flex; /* Use flexbox */
-        flex-direction: row; /* Align images in a row */
-        margin-bottom: 20px; /* Space below */
+        margin-top: 90px;
+        /* Space above button */
     }
 
     .about-small-img img {
-        height: 60px; /* Smaller image size */
-        margin: 0 5px; /* Space between images */
+        flex-direction: row;
     }
 
-    .about-img {
-        width: fit-content; /* Adjust width */
-        margin-right: 0; /* Remove right margin */
-        margin-top: 90px; /* Space above */
-    }
-
-    .about-text {
-        width: 90%; /* Use more screen width */
-        padding: 15px; /* Adjust padding */
-    }
-
-    .about-text p {
-        line-height: 20px; /* Adjust line height */
-    }
-}
-
-/* Medium devices (tablets, 768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .main-text h1 {
-        font-size: 70px; /* Adjust for tablets */
-    }
-
-    .products .box {
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
-    }
-
-    .button {
-        padding: 10px 18px; /* Adjust button padding */
+    .about {
+        width: 100%;
+        padding: 35px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Align content to the right */
     }
 
     .about h1 {
-        font-size: 40px; /* Decrease header size */
+        font-size: 60px;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Align header text to the right */
+        background: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .about h1 span {
+        background: linear-gradient(to right, #c72092, #6c14d0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 15px;
+    }
+
+    .about-main {
+        display: flex;
+        align-items: flex-start;
+        /* Align items to the start */
+        width: 100%;
+        /* Control overall width */
+        margin-top: 40px;
+        align-items: left;
+    }
+
+    .about-small-img {
+        display: flex;
+        flex-direction: column;
+        /* Stack small images vertically */
     }
 
     .about-small-img img {
-        height: 80px; /* Decrease small image size */
-        margin: 4px 0; /* Adjust spacing */
+        height: 92px;
+        /* Set height for small images */
+        margin: 5px 0;
+        /* Space between images */
+        cursor: pointer;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    .about-small-img img:hover {
+        opacity: 1;
+        /* Full opacity on hover */
+    }
+
+    .about-img {
+        flex: 1;
+        /* Allow the image section to grow */
+        display: flex;
+        justify-content: flex-start;
+        /* Align main image to the left */
     }
 
     .image-container {
-        height: auto; /* Let height adjust automatically */
-        padding: 15px; /* Adjust padding */
+        border: 3px solid #6c14d0;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 0 8px #6c14d0;
+    }
+
+    .image-container img {
+        padding-top: 100px;
+        height: 350px;
+        width: 200px;
+        border-radius: 15px;
+        /* Add slight rounding to corners */
+    }
+
+    .about-text {
+        flex: 1;
+        /* Allow the text section to grow */
+        margin-left: 20px;
+        /* Add space between image and text */
+        text-align: justify;
+        /* Justify text for a cleaner look */
     }
 
     .about-text p {
-        font-size: 14px; /* Adjust font size */
-        line-height: 18px; /* Adjust line height */
-        padding: 10px; /* Adjust padding */
+        background: linear-gradient(to left, #c72092, #6c14d0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 22px;
+        padding: 25px;
+        border: 2px solid #c72092;
+        border-radius: 20px;
+        box-shadow: 0 0 8px #c72092;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .about-btn {
+        color: black;
+        background: none;
+        margin-top: 20px;
+        padding: 10px 25px;
+        border: 2px solid #c72092;
+        text-decoration: none;
+        box-shadow: 0 0 8px #c72092;
+        transition: 0.5s;
+        align-items: center;
+    }
+
+    .about-btn:hover {
+        background: #c72092;
+        /* Change background on hover */
+        color: white;
     }
 }
 
-/* Large devices (desktops, 1025px and up) */
-@media (min-width: 1025px) {
-    .main-text h1 {
-        font-size: 90px; /* Original size for large screens */
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+        .about-main {
+            flex-direction: column;
+            /* Stack elements vertically */
+            align-items: left;
+            
+            /* Center align items */
+        }
+
+        .about-small-img {
+            left: 10%;
+            margin-right:none;
+            /* Remove right margin for smaller screens */
+            margin-bottom: 20px;
+            /* Add space below small images */
+        }
+
+        .about-text {
+            margin-left: 0;
+            /* Remove left margin for smaller screens */
+            text-align: center;
+            /* Center align text for readability */
+        }
     }
 
-    .main-img img {
-        width: 100%; /* Full width for large screens */
-        height: auto; /* Maintain aspect ratio */
+
+    /* Medium devices (tablets, 768px to 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .main-text h1 {
+            font-size: 70px;
+            /* Adjust for tablets */
+        }
+
+        .products .box {
+            grid-template-columns: repeat(3, 1fr);
+            /* Three columns */
+        }
+
+        .button {
+            padding: 10px 18px;
+            /* Adjust button padding */
+        }
+
+        .about h1 {
+            font-size: 40px;
+            /* Decrease header size */
+        }
+
+        .about-small-img img {
+            height: 80px;
+            /* Decrease small image size */
+            margin: 4px 0;
+            /* Adjust spacing */
+        }
+
+        .image-container {
+            height: auto;
+            /* Let height adjust automatically */
+            padding: 15px;
+            /* Adjust padding */
+        }
+
+        .about-text p {
+            font-size: 14px;
+            /* Adjust font size */
+            line-height: 18px;
+            /* Adjust line height */
+            padding: 10px;
+            /* Adjust padding */
+        }
     }
 
-    .products .box {
-        grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    /* Large devices (desktops, 1025px and up) */
+    @media (min-width: 1025px) {
+        .main-text h1 {
+            font-size: 90px;
+            /* Original size for large screens */
+        }
+
+        .main-img img {
+            width: 100%;
+            /* Full width for large screens */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .products .box {
+            grid-template-columns: repeat(4, 1fr);
+            /* Four columns for larger screens */
+        }
+
+        .products .box .card {
+            width: 290px;
+            /* Keep original size */
+        }
+
+        .social-icon {
+            font-size: 20px;
+            /* Larger icons */
+        }
+
+        .button {
+            padding: 10px 20px;
+            /* Keep original padding */
+        }
     }
 
-    .products .box .card {
-        width: 290px; /* Keep original size */
-    }
-
-    .social-icon {
-        font-size: 20px; /* Larger icons */
-    }
-
-    .button {
-        padding: 10px 20px; /* Keep original padding */
-    }
-}
 
 
 
 
+    @keyframes slideRight {
+        from {
+            transform: translateX(0);
+            /* Relative to base font size */
+            opacity: 0;
+        }
 
-@keyframes slideRight {
-    from {
-        transform: translateX(0); /* Relative to base font size */
-        opacity: 0;
+        to {
+            transform: translateX(100%);
+            opacity: 1;
+        }
     }
-    to {
-        transform: translateX(100%);
-        opacity: 1;
-    }
-}
 
-@keyframes slideTop {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+    @keyframes slideTop {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-20px); /* Start slightly above */
-        opacity: 0; /* Start hidden */
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-    to {
-        transform: translateY(0); /* End at original position */
-        opacity: 1; /* Fully visible */
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-20px);
+            /* Start slightly above */
+            opacity: 0;
+            /* Start hidden */
+        }
+
+        to {
+            transform: translateY(0);
+            /* End at original position */
+            opacity: 1;
+            /* Fully visible */
+        }
     }
-}
